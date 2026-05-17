@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WalletPro — HCI2 Usability Report</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/logo.jpg" alt="WalletPro Logo" class="brand-logo">
+        WalletPro
+      </a>
+      <ul class="navbar-nav" id="navbar-nav">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="pages/data-gathering.html" class="nav-link">Data Gathering</a></li>
+        <li><a href="pages/results.html" class="nav-link">Results & Recommendations</a></li>
+      </ul>
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO: Text left, Video right -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <div class="hero-badge">HCI2 — Human-Computer Interaction</div>
+        <h1 class="hero-title">
+          <span>Usability Report for</span>
+          WalletPro
+        </h1>
+        <p class="hero-desc">
+          A comprehensive usability evaluation of the WalletPro e-wallet prototype,
+          conducted through Heuristic Evaluation and Usability Testing by students of
+          Partido State University.
+        </p>
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-label">Course</span>
+            <span class="meta-value">HCI2</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Department</span>
+            <span class="meta-value">Computational Sciences</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">University</span>
+            <span class="meta-value">Partido State University</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Demo Video -->
+      <div class="hero-video-wrap">
+        <div class="video-frame">
+          <div class="video-frame-header">
+            <div class="frame-dots"><span></span><span></span><span></span></div>
+            <div class="frame-url">WalletPro — App Demo</div>
+          </div>
+          <video class="demo-video" controls autoplay muted loop playsinline poster="img/video-thumbnail.jpg">
+            <source src="video/demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="video-caption">▶ WalletPro App — Demo Video</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT: Problem (left) + Prototype (right), Feature cards below -->
+  <section class="about-app">
+    <div class="container">
+
+      <div class="fade-in">
+        <span class="badge">About the Project</span>
+        <h2 class="section-title">WalletPro E-Wallet</h2>
+        <p class="section-subtitle">A mobile-first digital wallet prototype designed for seamless financial transactions.</p>
+      </div>
+
+      <!-- Two-column split -->
+      <div class="about-split fade-in">
+
+        <!-- Left: Problem & Solution -->
+        <div class="about-problem">
+          <h3 class="problem-heading">The Problem</h3>
+          <p class="problem-text">
+            Many Filipinos — especially students and young professionals — still rely on
+            cash for everyday transactions, leading to inconvenience, security risks, and
+            difficulty tracking expenses.
+          </p>
+          <p class="problem-text">
+            Existing e-wallet solutions are often complex or intimidating for first-time
+            users, lacking a clear and simple interface that guides them through core
+            financial tasks.
+          </p>
+          <h3 class="problem-heading" style="margin-top:1.75rem;">Our Solution</h3>
+          <p class="problem-text">
+            WalletPro is a mobile e-wallet prototype designed with simplicity and
+            usability at its core — providing a clean, intuitive experience for:
+          </p>
+          <ul class="solution-list">
+            <li><span class="sol-icon">💸</span> Sending and receiving money instantly</li>
+            <li><span class="sol-icon">🔒</span> Securing transactions with a trusted interface</li>
+            <li><span class="sol-icon">📊</span> Tracking expenses with a built-in history log</li>
+          </ul>
+        </div>
+
+        <!-- Right: Figma Prototype -->
+        <div class="about-prototype">
+          <div class="prototype-label">
+            <span class="proto-dot"></span>
+            Interactive Prototype
+          </div>
+          <div class="prototype-frame">
+            <div class="prototype-frame-header">
+              <div class="frame-dots"><span></span><span></span><span></span></div>
+              <div class="frame-url">figma.com/proto/walletpro</div>
+            </div>
+            <div class="qr-display">
+              <img src="img/qrcode_www.figma.com.png" alt="Scan to view WalletPro Prototype" class="qr-image">
+              <p class="qr-hint">Scan with your phone camera</p>
+            </div>
+          </div>
+          <a href="https://www.figma.com/proto/5w82YXK7FJJXImZB7CW0Cy/HCI2?node-id=619-876&t=2y4bneSwUDBYIBUN-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=619%3A876"
+            target="_blank" rel="noopener noreferrer" class="btn-prototype">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+            Open Prototype
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="about-grid">
+        <div class="about-card fade-in">
+          <div class="card-icon"><img src="img/icon-payments.png" alt="Digital Payments"></div>
+          <h3>Digital Payments</h3>
+          <p>Allows users to send and receive money instantly with a simple and intuitive interface.</p>
+        </div>
+        <div class="about-card fade-in">
+          <div class="card-icon"><img src="img/icon-secure.png" alt="Secure Transactions"></div>
+          <h3>Secure Transactions</h3>
+          <p>Designed with security-first principles, ensuring user data and transactions are always protected.</p>
+        </div>
+        <div class="about-card fade-in">
+          <div class="card-icon"><img src="img/icon-expense.png" alt="Expense Tracking"></div>
+          <h3>Expense Tracking</h3>
+          <p>Built-in transaction history and spending overview for better financial management.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="badge">The Team</span>
+        <h2 class="section-title">Meet the Group</h2>
+        <p class="section-subtitle">Computational Sciences students behind the WalletPro usability study.</p>
+      </div>
+      <div class="team-all-grid">
+        <div class="team-card fade-in">
+          <img src="img/leader.png" alt="Leader" class="card-photo">
+          <div class="card-info"><h3>John Denver P. Garcia</h3><span class="leader-tag">Team Leader</span></div>
+        </div>
+        <div class="team-card fade-in">
+          <img src="img/member1.png" alt="Member 1" class="card-photo">
+          <div class="card-info"><h3>John Michael M. Basella</h3></div>
+        </div>
+        <div class="team-card fade-in">
+          <img src="img/member2.png" alt="Member 2" class="card-photo">
+          <div class="card-info"><h3>Rona Mae S. Buenafe</h3></div>
+        </div>
+        <div class="team-card fade-in">
+          <img src="img/member3.png" alt="Member 3" class="card-photo">
+          <div class="card-info"><h3>Ressa C. Belza</h3></div>
+        </div>
+        <div class="team-card fade-in">
+          <img src="img/member4.png" alt="Member 4" class="card-photo">
+          <div class="card-info"><h3>Marjem P. Espiritu</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>
+      <strong>WalletPro</strong> — HCI2 Usability Report &nbsp;|&nbsp;
+      Partido State University, Goa, Camarines Sur &nbsp;|&nbsp;
+      College of Engineering and Computational Sciences
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

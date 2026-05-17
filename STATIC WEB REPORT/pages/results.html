@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Results & Recommendations — WalletPro HCI2</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    .content-section { padding: 4rem 0; }
+    .card { background: #fff; border-radius: 14px; padding: 2rem; margin-bottom: 1.5rem; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); }
+    .card h3 { font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-dark); }
+    .card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; }
+    .coming-soon { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 1rem; }
+    .coming-soon span { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <img src="../img/logo.jpg" alt="WalletPro Logo" class="brand-logo">
+        WalletPro
+      </a>
+      <ul class="navbar-nav">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="data-gathering.html" class="nav-link">Data Gathering</a></li>
+        <li><a href="results.html" class="nav-link active">Results & Recommendations</a></li>
+      </ul>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Results, Discussion & Recommendations</h1>
+      <p>Findings from heuristic evaluation and usability testing of WalletPro</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="content-section">
+    <div class="container">
+
+      <!-- Summary -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-summary.png" alt="Summary of Usability Testing Results">
+          </div>
+          <h3>Summary of Usability Testing Results</h3>
+        </div>
+        <p>Overall summary of scores, completion rates, and key metrics gathered from testing sessions.</p>
+        <div class="coming-soon"><span>📊</span>Add your Results Summary here</div>
+      </div>
+
+      <!-- Key Issues -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-issues.png" alt="Key Issues Identified">
+          </div>
+          <h3>Key Issues Identified</h3>
+        </div>
+        <p>Specific usability problems found during testing, linked to Nielsen's heuristics.</p>
+        <div class="coming-soon"><span>🔍</span>Add Key Issues here</div>
+      </div>
+
+      <!-- Discussion -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-discussion.png" alt="Discussion of Findings">
+          </div>
+          <h3>Discussion of Findings</h3>
+        </div>
+        <p>In-depth discussion of why issues occurred and how they affect the user experience.</p>
+        <div class="coming-soon"><span>📝</span>Add your Discussion here</div>
+      </div>
+
+      <!-- Recommendations -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-recommendations.png" alt="Recommendations for Improvement">
+          </div>
+          <h3>Recommendations for Improvement</h3>
+        </div>
+        <p>Actionable recommendations for improving the WalletPro prototype based on findings.</p>
+        <div class="coming-soon"><span>💡</span>Add Recommendations here</div>
+      </div>
+
+      <!-- Design Improvements -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-design.png" alt="Suggested Design Improvements">
+          </div>
+          <h3>Suggested Design Improvements</h3>
+        </div>
+        <p>Visual or interaction design changes proposed based on the usability evaluation.</p>
+        <div class="coming-soon"><span>✏️</span>Add Design Suggestions here</div>
+      </div>
+
+      <!-- Heuristic Workbook PDF -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-pdf.png" alt="Heuristic Evaluation Workbook (PDF)">
+          </div>
+          <h3>Heuristic Evaluation Workbook (PDF)</h3>
+        </div>
+        <p>Attach the completed Heuristic Evaluation Workbook PDF below.</p>
+        <!-- Example: <iframe src="../assets/docs/heuristic-workbook.pdf" width="100%" height="600px"></iframe> -->
+        <div class="coming-soon"><span>📄</span>Embed or link your Heuristic Workbook PDF here</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p><strong>WalletPro</strong> — HCI2 Usability Report &nbsp;|&nbsp; Partido State University</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

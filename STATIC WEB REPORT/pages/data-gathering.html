@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Gathering — WalletPro HCI2</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    .content-section { padding: 4rem 0; }
+    .card { background: #fff; border-radius: 14px; padding: 2rem; margin-bottom: 1.5rem; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); }
+    .card h3 { font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-dark); }
+    .card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; }
+    .coming-soon { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 1rem; }
+    .coming-soon span { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <img src="../img/logo.jpg" alt="WalletPro Logo" class="brand-logo">
+        WalletPro
+      </a>
+      <ul class="navbar-nav">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="data-gathering.html" class="nav-link active">Data Gathering</a></li>
+        <li><a href="results.html" class="nav-link">Results & Recommendations</a></li>
+      </ul>
+      <button class="navbar-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Data Gathering</h1>
+      <p>Consent forms, respondent profiles, survey instruments, and documentation</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="content-section">
+    <div class="container">
+
+      <!-- Consent Form -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-consent.png" alt="Consent Form">
+          </div>
+          <h3>Consent Form</h3>
+        </div>
+        <p>Place your consent form content or embed a PDF here. You can use an &lt;iframe&gt; to embed a PDF file stored in assets/docs/.</p>
+        <!-- Example: <iframe src="../assets/docs/consent-form.pdf" width="100%" height="500px"></iframe> -->
+        <div class="coming-soon"><span>📄</span>Add your Consent Form here</div>
+      </div>
+
+      <!-- Respondents Info -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-respondents.png" alt="Respondents Information">
+          </div>
+          <h3>Respondents Information</h3>
+        </div>
+        <p>Summary or profile of the participants who took part in the usability testing.</p>
+        <div class="coming-soon"><span>👤</span>Add Respondent Profiles here</div>
+      </div>
+
+      <!-- Heuristic Evaluation Workbooks -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-heuristic.png" alt="Heuristic Evaluation Workbooks">
+          </div>
+          <h3>Heuristic Evaluation Workbooks</h3>
+        </div>
+        <p>Each member must have their own evaluation. Upload or embed each member's workbook PDF below.</p>
+        <div class="coming-soon"><span>📊</span>Add Heuristic Evaluation Workbooks here (one per member)</div>
+      </div>
+
+      <!-- Usability Testing Survey -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-survey.png" alt="Usability Testing Survey / Instruments">
+          </div>
+          <h3>Usability Testing Survey / Instruments</h3>
+        </div>
+        <p>Survey forms and instruments used during usability testing sessions.</p>
+        <div class="coming-soon"><span>📋</span>Add Survey Instruments here</div>
+      </div>
+
+      <!-- Documentation / Photos -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon-lg">
+            <img src="../img/icon-photos.png" alt="Documentation — Photos During Testing">
+          </div>
+          <h3>Documentation — Photos During Testing</h3>
+        </div>
+        <p>Photos and supporting files captured during the usability testing sessions.</p>
+        <div class="coming-soon"><span>🖼️</span>Add Testing Photos here</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p><strong>WalletPro</strong> — HCI2 Usability Report &nbsp;|&nbsp; Partido State University</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
