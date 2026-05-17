@@ -37,6 +37,14 @@
   --gallery-img-height: 220px;
   --gallery-min-width: 220px;
   --gallery-transition: 0.3s ease;
+  --design-card-bg: rgba(26, 114, 250, 0.05);
+  --design-card-border: var(--blue-primary);
+  --design-card-title: var(--text-dark);
+  --design-card-text: var(--gray-600);
+  --design-card-hover-shadow: var(--shadow-md);
+  --design-card-radius: var(--radius-md);
+  --design-card-padding: 1.3rem;
+  --design-card-transition: var(--transition);
 }
 
 /* --- Reset --- */

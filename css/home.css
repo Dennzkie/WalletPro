@@ -445,6 +445,46 @@
   gap: 1rem;
 }
 
+.fade-in { opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.5s, 
+  transform 0.5s; 
+}
+.fade-in.visible { 
+  opacity: 1; 
+  transform: none; 
+}
+.content-section { 
+  padding: 4rem 0; 
+}
+.card { background: #fff; 
+  border-radius: 14px; 
+  padding: 2rem; 
+  margin-bottom: 1.5rem; 
+  border: 1px solid var(--gray-200); 
+  box-shadow: var(--shadow-sm); 
+}
+.card h3 { font-family: var(--font-head); 
+  font-size: 1.1rem; 
+  font-weight: 700; 
+  margin-bottom: 0.75rem; 
+  color: var(--text-dark); }
+.card p { color: var(--text-muted); 
+  font-size: 0.9rem; 
+  line-height: 1.7; 
+}
+.coming-soon { 
+  text-align: center; 
+  padding: 3rem; 
+  color: var(--text-muted); 
+  font-size: 1rem; 
+}
+.coming-soon span { 
+  font-size: 2.5rem; 
+  display: block; 
+  margin-bottom: 1rem; 
+}
+
 /* =========================================
    PDF VIEWER — Responsive Embed
 ========================================= */
@@ -581,6 +621,212 @@
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
+/* ==========================
+RESULTS CHART 
+=============================*/
+
+/* Results Page — Responsive Styles */
+
+/* Key Issues Section */
+.key-issues-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.key-issue-item {
+  background: #f8f9fa;
+  border-left: 4px solid #4a90d9;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.key-issue-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.key-issue-item h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.key-issue-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Design Improvements Section */
+.design-improvements-list {
+  margin-top: 1.5rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.25rem;
+}
+
+.design-improvement-item {
+  background: var(--design-card-bg);
+  border-left: 5px solid var(--design-card-border);
+  border-radius: var(--design-card-radius);
+  padding: var(--design-card-padding);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--design-card-transition),
+    box-shadow var(--design-card-transition);
+}
+
+.design-improvement-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--design-card-hover-shadow);
+}
+
+.design-improvement-item h4 {
+  margin-bottom: 0.6rem;
+  font-family: var(--font-head);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--design-card-title);
+}
+
+.design-improvement-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--design-card-text);
+  text-align: justify;
+}
+/* Results Chart Styles */
+
+.results-chart {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-chart .chart-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* =========================================
+   DISCUSSION FINDINGS
+========================================= */
+
+.discussion-findings-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.discussion-item {
+  background: rgba(26, 114, 250, 0.05);
+  border-left: 5px solid var(--blue-primary);
+  border-radius: var(--radius-md);
+  padding: 1.3rem;
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.discussion-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.discussion-item h4 {
+  margin-bottom: 0.6rem;
+  font-family: var(--font-head);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.discussion-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--gray-600);
+  text-align: justify;
+}
+
+/* =========================================
+   RECOMMENDATIONS
+========================================= */
+
+.recommendations-list {
+  margin-top: 1.5rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.25rem;
+}
+
+.recommendation-item {
+  background: rgba(26, 114, 250, 0.05);
+
+  border-left: 5px solid var(--blue-primary);
+
+  border-radius: var(--radius-md);
+
+  padding: 1.3rem;
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.recommendation-item:hover {
+  transform: translateY(-3px);
+
+  box-shadow: var(--shadow-md);
+}
+
+.recommendation-item h4 {
+  margin-bottom: 0.6rem;
+
+  font-family: var(--font-head);
+
+  font-size: 1.02rem;
+
+  font-weight: 700;
+
+  color: var(--text-dark);
+}
+
+.recommendation-item p {
+  margin: 0;
+
+  font-size: 0.95rem;
+
+  line-height: 1.8;
+
+  color: var(--gray-600);
+
+  text-align: justify;
+}
 
 /* ===========================
    RESPONSIVE
@@ -608,5 +854,103 @@
 @media (max-width: 480px) {
   .testing-gallery {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet and smaller */
+@media (max-width: 768px) {
+  .results-chart {
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+  }
+
+  .results-chart .chart-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .key-issues-list {
+    margin-top: 1.25rem;
+    gap: 1rem;
+  }
+
+  .key-issue-item {
+    padding: 1rem 1.25rem;
+  }
+
+  .key-issue-item h4 {
+    font-size: 1rem;
+  }
+
+  .key-issue-item p {
+    font-size: 0.9rem;
+  }
+
+  .design-improvements-list {
+    margin-top: 1.25rem;
+    gap: 1rem;
+  }
+
+  .design-improvement-item {
+    padding: 1rem 1.25rem;
+  }
+
+  .design-improvement-item h4 {
+    font-size: 1rem;
+  }
+
+  .design-improvement-item p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .results-chart {
+    margin: 0.75rem 0;
+    padding: 0;
+  }
+
+  .results-chart .chart-image {
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  .key-issues-list {
+    margin-top: 1rem;
+    gap: 0.75rem;
+  }
+
+  .key-issue-item {
+    padding: 0.75rem 1rem;
+    border-left-width: 3px;
+  }
+
+  .key-issue-item h4 {
+    font-size: 0.95rem;
+  }
+
+  .key-issue-item p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .design-improvements-list {
+    margin-top: 1rem;
+    gap: 0.75rem;
+  }
+
+  .design-improvement-item {
+    padding: 0.75rem 1rem;
+    border-left-width: 3px;
+  }
+
+  .design-improvement-item h4 {
+    font-size: 0.95rem;
+  }
+
+  .design-improvement-item p {
+    font-size: 0.875rem;
+    line-height: 1.5;
   }
 }

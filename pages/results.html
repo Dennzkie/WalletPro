@@ -5,16 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Results & Recommendations — WalletPro HCI2</title>
   <link rel="stylesheet" href="../css/global.css" />
-  <style>
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
-    .fade-in.visible { opacity: 1; transform: none; }
-    .content-section { padding: 4rem 0; }
-    .card { background: #fff; border-radius: 14px; padding: 2rem; margin-bottom: 1.5rem; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); }
-    .card h3 { font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-dark); }
-    .card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; }
-    .coming-soon { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 1rem; }
-    .coming-soon span { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
-  </style>
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="../css/results.css" />
 </head>
 <body>
 
@@ -56,8 +48,10 @@
           </div>
           <h3>Summary of Usability Testing Results</h3>
         </div>
-        <p>Overall summary of scores, completion rates, and key metrics gathered from testing sessions.</p>
-        <div class="coming-soon"><span>📊</span>Add your Results Summary here</div>
+        <p>The usability testing for the WalletPro Business Mode prototype utilized the System Usability Scale (SUS) to measure real-time tracking accuracy and user confidence. Overall, the data reveals a robust core architecture with specific friction points during the initial onboarding phase.</p>
+        <div class="results-chart">
+          <img src="../img/chart.png" alt="Summary of Results — Bar Chart" class="chart-image">
+        </div>
       </div>
 
       <!-- Key Issues -->
@@ -68,8 +62,29 @@
           </div>
           <h3>Key Issues Identified</h3>
         </div>
-        <p>Specific usability problems found during testing, linked to Nielsen's heuristics.</p>
-        <div class="coming-soon"><span>🔍</span>Add Key Issues here</div>
+        <p>Based on the survey responses and usability evaluation of the WalletPro Business Mode prototype, several issues were identified by participants:</p>
+        <div class="key-issues-list">
+          <div class="key-issue-item">
+            <h4>1. Learning Difficulty for Some Users</h4>
+            <p>Some respondents indicated that the system may still require assistance from a technical person, especially for beginners and older users. This suggests that certain features or workflows are not yet fully intuitive.</p>
+          </div>
+          <div class="key-issue-item">
+            <h4>2. Complexity and User Familiarity</h4>
+            <p>Although many users found the system manageable, the average score for system complexity remained moderate. This implies that some parts of the interface or transaction process may still feel overwhelming to first-time users.</p>
+          </div>
+          <div class="key-issue-item">
+            <h4>3. Limited Advanced Financial Features</h4>
+            <p>Respondents suggested additional tools such as budgeting functions, automatic expense tracking, cashback programs, and more detailed financial analytics. This indicates that the current version may lack comprehensive financial management capabilities.</p>
+          </div>
+          <div class="key-issue-item">
+            <h4>4. Security and Verification Concerns</h4>
+            <p>Several users emphasized the importance of stronger account verification and security measures, particularly because the application handles financial transactions.</p>
+          </div>
+          <div class="key-issue-item">
+            <h4>5. Accessibility for Older or Less Experienced Users</h4>
+            <p>Participants recommended making the system easier to access and learn, especially for users with limited digital wallet experience.</p>
+          </div>
+        </div>
       </div>
 
       <!-- Discussion -->
@@ -81,7 +96,54 @@
           <h3>Discussion of Findings</h3>
         </div>
         <p>In-depth discussion of why issues occurred and how they affect the user experience.</p>
-        <div class="coming-soon"><span>📝</span>Add your Discussion here</div>
+        <div class="discussion-findings-list">
+
+          <div class="discussion-item">
+            <h4>1. Users Found the System Useful and Practical</h4>
+            <p>
+              Most participants appreciated the transaction monitoring and
+              financial record tracking capabilities. Features related to
+              viewing income and expenses were frequently mentioned as beneficial.
+            </p>
+          </div>
+
+          <div class="discussion-item">
+            <h4>2. Confidence in System Usage Was High</h4>
+            <p>
+              Respondents reported feeling relatively confident while using
+              the system, indicating that the interface is understandable
+              for many users.
+            </p>
+          </div>
+
+          <div class="discussion-item">
+            <h4>3. The System Was Perceived as Integrated and Organized</h4>
+            <p>
+              Users noted that the functions within the application worked
+              together effectively, helping improve transaction management
+              efficiency.
+            </p>
+          </div>
+
+          <div class="discussion-item">
+            <h4>4. Ease of Use Was Rated Positively</h4>
+            <p>
+              The majority of respondents agreed that the system was easy
+              to use and could be learned quickly, especially by users
+              already familiar with digital wallets.
+            </p>
+          </div>
+
+          <div class="discussion-item">
+            <h4>5. Security Was Considered a Valuable Feature</h4>
+            <p>
+              Security and convenience were among the most appreciated
+              aspects of the prototype, showing that users value safe
+              and reliable financial applications.
+            </p>
+          </div>
+
+        </div>
       </div>
 
       <!-- Recommendations -->
@@ -93,7 +155,53 @@
           <h3>Recommendations for Improvement</h3>
         </div>
         <p>Actionable recommendations for improving the WalletPro prototype based on findings.</p>
-        <div class="coming-soon"><span>💡</span>Add Recommendations here</div>
+        <div class="recommendations-list">
+
+          <div class="recommendation-item">
+            <h4>1. Simplify the User Interface</h4>
+            <p>
+              Reduce unnecessary complexity by improving navigation flow,
+              minimizing clutter, and using clearer labels and instructions.
+            </p>
+          </div>
+
+          <div class="recommendation-item">
+            <h4>2. Add Financial Management Tools</h4>
+            <p>
+              Incorporate features such as budget planning, expense
+              categorization, financial analytics and reports,
+              automatic transaction summaries, and savings tracking.
+            </p>
+          </div>
+
+          <div class="recommendation-item">
+            <h4>3. Improve Accessibility and User Guidance</h4>
+            <p>
+              Provide onboarding tutorials, tooltips, walkthroughs,
+              and beginner-friendly instructions to assist
+              less experienced users.
+            </p>
+          </div>
+
+          <div class="recommendation-item">
+            <h4>4. Strengthen Security Features</h4>
+            <p>
+              Implement stronger verification methods such as
+              multi-factor authentication, ID verification,
+              biometric login, and fraud detection alerts.
+            </p>
+          </div>
+
+          <div class="recommendation-item">
+            <h4>5. Introduce Incentive Programs</h4>
+            <p>
+              Cashback promotions, rewards systems,
+              and loyalty programs may encourage
+              more active and frequent usage.
+            </p>
+          </div>
+
+        </div>
       </div>
 
       <!-- Design Improvements -->
@@ -104,8 +212,37 @@
           </div>
           <h3>Suggested Design Improvements</h3>
         </div>
-        <p>Visual or interaction design changes proposed based on the usability evaluation.</p>
-        <div class="coming-soon"><span>✏️</span>Add Design Suggestions here</div>
+        <p>To enhance both usability and visual experience, the following design improvements are recommended:</p>
+        <div class="design-improvements-list">
+          <div class="design-improvement-item">
+            <h4>1. Cleaner Dashboard Layout</h4>
+            <p>Use card-based sections for income, expenses, and transaction history. Reduce overcrowding by grouping related functions together.</p>
+          </div>
+          <div class="design-improvement-item">
+            <h4>2. Improved Navigation</h4>
+            <p>Add a fixed bottom navigation bar or sidebar for quick access. Use recognizable icons paired with text labels.</p>
+          </div>
+          <div class="design-improvement-item">
+            <h4>3. Better Visual Hierarchy</h4>
+            <p>Highlight important financial data using larger fonts and spacing. Use consistent typography and button styles throughout the application.</p>
+          </div>
+          <div class="design-improvement-item">
+            <h4>4. Responsive and Mobile-Friendly Design</h4>
+            <p>Ensure the interface adapts properly to smartphones, tablets, and desktops. Optimize button sizes and spacing for touch interaction.</p>
+          </div>
+          <div class="design-improvement-item">
+            <h4>5. Beginner-Friendly Interface</h4>
+            <p>Include onboarding screens and guided tutorials. Add contextual help buttons or FAQs within important sections.</p>
+          </div>
+          <div class="design-improvement-item">
+            <h4>6. Enhanced Transaction Visualization</h4>
+            <p>Add charts and graphs for: Spending trends, Income summaries, Budget progress, Monthly reports.</p>
+          </div>
+          <div class="design-improvement-item">
+            <h4>7. Security Feedback Indicators</h4>
+            <p>Display security confirmations, verification status, and successful transaction notifications clearly to improve user trust.</p>
+          </div>
+        </div>
       </div>
 
       <!-- Heuristic Workbook PDF -->
