@@ -445,6 +445,72 @@
   gap: 1rem;
 }
 
+/* =========================================
+   TESTING PHOTOS GALLERY
+========================================= */
+
+.fade-in { opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.5s, 
+  transform 0.5s; 
+}
+.fade-in.visible { 
+  opacity: 1; 
+  transform: none; 
+}
+.content-section { 
+  padding: 4rem 0; 
+}
+.card { 
+  background: #fff; 
+  border-radius: 14px; 
+  padding: 2rem; margin-bottom: 1.5rem; 
+  border: 1px solid var(--gray-200); 
+  box-shadow: var(--shadow-sm); 
+}
+.card h3 { 
+  font-family: var(--font-head); 
+  font-size: 1.1rem; 
+  font-weight: 700; 
+  margin-bottom: 0.75rem; 
+  color: var(--text-dark); 
+}
+.card p { 
+  color: var(--text-muted); 
+  font-size: 0.9rem; 
+  line-height: 1.7; 
+}
+.coming-soon { 
+  text-align: center; 
+  padding: 3rem; 
+  color: var(--text-muted); 
+  font-size: 1rem; 
+}
+.coming-soon span { 
+  font-size: 2.5rem; 
+  display: block; 
+  margin-bottom: 1rem; 
+}
+.testing-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.testing-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--gray-200);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testing-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+
 /* ===========================
    RESPONSIVE
    =========================== */
@@ -461,4 +527,15 @@
   .hero-title span { font-size: 1.5rem; }
   .about-grid { grid-template-columns: 1fr; }
   .team-all-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .testing-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .testing-gallery {
+    grid-template-columns: 1fr;
+  }
 }

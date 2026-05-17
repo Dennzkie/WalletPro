@@ -29,6 +29,13 @@
   --font-body: 'DM Sans', sans-serif;
   --navbar-height: 68px;
   --transition: 0.25s ease;
+  --gallery-gap: 18px;
+  --gallery-radius: 14px;
+  --gallery-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  --gallery-hover-lift: -5px;
+  --gallery-img-height: 220px;
+  --gallery-min-width: 220px;
+  --gallery-transition: 0.3s ease;
 }
 
 /* --- Reset --- */
