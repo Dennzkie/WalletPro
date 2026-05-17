@@ -315,3 +315,174 @@ ul {
   font-size: 1.05rem;
   opacity: 0.82;
 }
+
+/* =========================================
+   WORKBOOK PROFILE CARDS
+========================================= */
+
+.workbook-grid {
+  margin-top: 2rem;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 2rem;
+}
+
+.workbook-profile-card {
+  background: var(--bg-white);
+
+  border: 1px solid var(--gray-200);
+
+  border-radius: var(--radius-lg);
+
+  padding: 2.5rem 2rem;
+
+  text-align: center;
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.workbook-profile-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: var(--shadow-lg);
+}
+
+.workbook-profile-image {
+  width: 140px;
+
+  height: 140px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  border: 5px solid var(--gray-200);
+
+  margin-bottom: 1.5rem;
+
+  background: var(--gray-100);
+}
+
+.workbook-profile-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.workbook-profile-card h3 {
+  font-family: var(--font-head);
+
+  font-size: 1.4rem;
+
+  font-weight: 700;
+
+  color: var(--blue-primary);
+
+  margin-bottom: 0.75rem;
+}
+
+.workbook-role {
+  display: inline-block;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  color: var(--blue-primary);
+
+  margin-bottom: 2rem;
+}
+
+.workbook-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: var(--blue-primary);
+
+  color: #fff;
+
+  font-family: var(--font-head);
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  padding: 1rem 1.8rem;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  transition:
+    transform var(--transition),
+    background var(--transition),
+    box-shadow var(--transition);
+
+  box-shadow: 0 6px 20px rgba(26,114,250,0.25);
+}
+
+.workbook-btn:hover {
+  background: var(--blue-dark);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 24px rgba(26,114,250,0.35);
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+
+  .workbook-profile-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .workbook-profile-image {
+    width: 110px;
+
+    height: 110px;
+  }
+
+  .workbook-profile-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .workbook-btn {
+    width: 100%;
+  }
+}
+/* MOBILE */
+
+@media (max-width: 576px) {
+
+    .workbook-item {
+        align-items: flex-start;
+    }
+
+    .workbook-item img {
+        width: 36px;
+        height: 36px;
+    }
+}
