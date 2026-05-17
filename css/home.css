@@ -726,46 +726,281 @@ RESULTS CHART
 }
 
 /* =========================================
-   DISCUSSION FINDINGS
+   KEY ISSUES TABLE
 ========================================= */
 
-.discussion-findings-list {
+.issues-table-wrapper {
   margin-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
 
-.discussion-item {
-  background: rgba(26, 114, 250, 0.05);
-  border-left: 5px solid var(--blue-primary);
+  width: 100%;
+
+  overflow-x: auto;
+
   border-radius: var(--radius-md);
-  padding: 1.3rem;
+
   box-shadow: var(--shadow-sm);
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition);
+
+  -webkit-overflow-scrolling: touch;
 }
 
-.discussion-item:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+.issues-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background: var(--bg-white);
+
+  min-width: 750px;
 }
 
-.discussion-item h4 {
-  margin-bottom: 0.6rem;
+/* HEADER */
+
+.issues-table thead {
+  background: var(--blue-primary);
+
+  color: #fff;
+}
+
+.issues-table th {
+  padding: 1rem;
+
+  text-align: left;
+
   font-family: var(--font-head);
-  font-size: 1.02rem;
+
+  font-size: 0.95rem;
+
   font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* BODY */
+
+.issues-table td {
+  padding: 1rem;
+
+  font-size: 0.93rem;
+
+  line-height: 1.8;
+
+  color: var(--gray-700);
+
+  vertical-align: top;
+
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.issues-table tbody tr {
+  transition: background var(--transition);
+}
+
+.issues-table tbody tr:hover {
+  background: rgba(26, 114, 250, 0.04);
+}
+
+/* COLUMN WIDTHS */
+
+.issues-table td:first-child {
+  width: 70px;
+
+  font-weight: 700;
+
+  color: var(--blue-primary);
+
+  text-align: center;
+}
+
+.issues-table td:nth-child(2) {
+  width: 260px;
+
+  font-weight: 600;
+
   color: var(--text-dark);
 }
 
-.discussion-item p {
-  margin: 0;
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .issues-table {
+    min-width: 680px;
+  }
+
+  .issues-table th,
+  .issues-table td {
+    padding: 0.9rem;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+  .issues-table {
+    min-width: 620px;
+  }
+
+  .issues-table th {
+    font-size: 0.85rem;
+  }
+
+  .issues-table td {
+    font-size: 0.85rem;
+
+    line-height: 1.6;
+  }
+
+  .issues-table td:first-child {
+    width: 50px;
+  }
+
+  .issues-table td:nth-child(2) {
+    width: 180px;
+  }
+}
+
+/* =========================================
+   DISCUSSION FINDINGS TABLE
+========================================= */
+
+.discussion-table-wrapper {
+  margin-top: 1.5rem;
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  border-radius: var(--radius-md);
+
+  box-shadow: var(--shadow-sm);
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.discussion-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background: var(--bg-white);
+
+  min-width: 750px;
+}
+
+/* HEADER */
+
+.discussion-table thead {
+  background: var(--blue-primary);
+
+  color: #fff;
+}
+
+.discussion-table th {
+  padding: 1rem;
+
+  text-align: left;
+
+  font-family: var(--font-head);
+
   font-size: 0.95rem;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* BODY */
+
+.discussion-table td {
+  padding: 1rem;
+
+  font-size: 0.93rem;
+
   line-height: 1.8;
-  color: var(--gray-600);
-  text-align: justify;
+
+  color: var(--gray-700);
+
+  vertical-align: top;
+
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.discussion-table tbody tr {
+  transition: background var(--transition);
+}
+
+.discussion-table tbody tr:hover {
+  background: rgba(26, 114, 250, 0.04);
+}
+
+/* COLUMN WIDTHS */
+
+.discussion-table td:first-child {
+  width: 70px;
+
+  font-weight: 700;
+
+  color: var(--blue-primary);
+
+  text-align: center;
+}
+
+.discussion-table td:nth-child(2) {
+  width: 280px;
+
+  font-weight: 600;
+
+  color: var(--text-dark);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .discussion-table {
+    min-width: 680px;
+  }
+
+  .discussion-table th,
+  .discussion-table td {
+    padding: 0.9rem;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+  .discussion-table {
+    min-width: 620px;
+  }
+
+  .discussion-table th {
+    font-size: 0.85rem;
+  }
+
+  .discussion-table td {
+    font-size: 0.85rem;
+
+    line-height: 1.6;
+  }
+
+  .discussion-table td:first-child {
+    width: 50px;
+  }
+
+  .discussion-table td:nth-child(2) {
+    width: 180px;
+  }
 }
 
 /* =========================================
